@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./index.js"></script>
+    <script src="./contacto.js"></script>
     <script
       src="https://kit.fontawesome.com/3ea38ea0da.js"
       crossorigin="anonymous"
@@ -35,17 +36,19 @@
         <div class="user-ico"><i class="fa-solid fa-user fa-xl"></i></div>
     </header>
     <main>
-      <form action="https://formspree.io/f/xzbwgdkp" method="POST">
+      <form action="https://formspree.io/f/xzbwgdkp" method="POST" name="contacto" onsubmit = "return validate()">
         <div class="form">
             <ul class="form-style-1">
-                <li><label>Nombre y apellido <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                <li>
+                  <label>Nombre y apellido <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" />
+                </li>
                 <li>
                     <label>Correo electrónico <span class="required">*</span></label>
                     <input type="email" name="field3" class="field-long" />
                 </li>
                 <li>
                     <label>Mensaje <span class="required">*</span></label>
-                    <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                    <textarea name="field4" id="field4" class="field-long field-textarea"></textarea>
                 </li>
                 <li>
                     <input type="submit" value="Enviar" />
